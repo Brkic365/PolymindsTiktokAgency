@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { domAnimation, LazyMotion } from "framer-motion";
+import Navbar from "../components/Navbar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <LazyMotion features={domAnimation}>
+        <Navbar />
+        <Component {...pageProps} />
+      </LazyMotion>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
-import { HiPaperAirplane, HiScissors, HiHeart } from "react-icons/hi2";
+import { HiHeart, HiPaperAirplane, HiScissors } from "react-icons/hi2";
 
 import ContactForm from "../components/ContactForm";
 
@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main} id={"home"}>
         {/* Hero section */}
         <section className={styles.hero}>
           <section className={styles.content}>
@@ -43,7 +43,7 @@ export default function Home() {
         </section>
 
         {/* Who we are section */}
-        <section className={styles.whoWeAre}>
+        <section className={styles.whoWeAre} id="about">
           <section className={styles.content}>
             <h2>Who we are</h2>
             <p>
@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* Steps section */}
-        <section className={styles.steps}>
+        <section className={styles.steps} id={"steps"}>
           <section className={styles.stepOne}>
             <div className={styles.circle}>
               <HiPaperAirplane />
@@ -117,7 +117,7 @@ export default function Home() {
         </section>
 
         {/* Contact section */}
-        <section className={styles.contact}>
+        <section className={styles.contact} id={"contact"}>
           <h2>Have any questions?</h2>
           <p>
             Feel free to reach out to us in regards to any questions you have

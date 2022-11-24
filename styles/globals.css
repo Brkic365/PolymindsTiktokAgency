@@ -8,7 +8,24 @@ body {
 }
 
 body {
-  background: linear-gradient(270deg, #4b5f8d 0%, #000000 167.44%);
+  background: rgb(75, 95, 141);
+
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(75, 95, 141, 1) 0%,
+    rgba(0, 0, 0, 1) 167.44%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(75, 95, 141, 1) 0%,
+    rgba(0, 0, 0, 1) 167.44%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(75, 95, 141, 1) 0%,
+    rgba(0, 0, 0, 1) 167.44%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4b5f8d",endColorstr="#000000",GradientType=1);
 }
 
 a {
@@ -21,6 +38,7 @@ a {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +47,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    /*background: black;*/
   }
 }
