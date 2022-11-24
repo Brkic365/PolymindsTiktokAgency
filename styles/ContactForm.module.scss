@@ -1,0 +1,207 @@
+.contactForm {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: #757575;
+  text-align: center;
+  background-size: cover;
+  background-position: 0% 80%;
+
+  label {
+    text-align: left;
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #e4e4e4;
+    font-size: 1.7rem;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+
+    padding: 0.4rem 2.2rem;
+    background: #e42958;
+    border: none;
+    border-radius: 9px;
+
+    p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: white;
+    }
+  }
+
+  form {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+
+    .group {
+      width: 100%;
+
+      .one,
+      .two {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    .budgetGroup {
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      width: 90%;
+
+      .one {
+        label,
+        input,
+        select {
+          margin-right: auto;
+          width: 80%;
+        }
+      }
+
+      .two {
+        label,
+        input,
+        select {
+          width: 115%;
+          margin-right: 15%;
+        }
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+    }
+
+    label {
+      margin-bottom: 0.4rem;
+    }
+
+    input,
+    textarea,
+    select {
+      margin-bottom: 0.8rem;
+      border: 1px solid #4b5f8d;
+      border-radius: 10px;
+      outline: none;
+      font-size: 0.8rem;
+      padding: 0.6rem;
+      color: rgba(255, 255, 255, 0.75);
+      resize: none;
+      background-color: transparent;
+    }
+  }
+}
+
+@media only screen and (min-width: 533px) {
+  .contact {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .confirmed {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    form {
+      width: 90%;
+      margin: 1rem auto;
+
+      button {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+      }
+
+      input,
+      textarea,
+      select {
+        font-size: 1rem;
+      }
+
+      .group {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        width: 90%;
+
+        .one {
+          label,
+          input,
+          select {
+            margin-right: auto;
+            width: 95%;
+          }
+        }
+
+        .two {
+          label,
+          input,
+          select {
+            margin-left: auto;
+            width: 95%;
+          }
+
+          select {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contact {
+    form {
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .contact {
+    h2 {
+      font-size: 2.5rem !important;
+    }
+
+    form {
+      margin-top: 2rem;
+      input,
+      textarea,
+      select {
+        margin-bottom: 1.3rem;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+      }
+
+      button {
+        padding: 0.9rem 3.5rem;
+      }
+    }
+  }
+}
