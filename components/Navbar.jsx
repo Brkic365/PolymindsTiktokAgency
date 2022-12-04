@@ -18,6 +18,34 @@ import {
 
 const MobileMenu = dynamic(() => import("./MobileMenu"));
 
+const links = [
+  {
+    title: "Home",
+    href: "#home",
+    img: <BsHouseFill />,
+  },
+  {
+    title: "About Us",
+    href: "#about",
+    img: <BsInfoCircleFill />,
+  },
+  {
+    title: "Steps",
+    href: "#steps",
+    img: <BsFillGearFill />,
+  },
+  {
+    title: "FAQ",
+    href: "/faq",
+    img: <BsQuestionCircleFill />,
+  },
+  {
+    title: "Contact Us",
+    href: "#contact",
+    img: <BsTelephoneFill />,
+  },
+];
+
 function Navbar() {
   const router = useRouter();
 
@@ -27,34 +55,6 @@ function Navbar() {
   // Get current Y scroll position and then use it to add border
   // to the navbar once scrollY is more than 0 (user scrolled)
   const scrollY = useScrollYPosition();
-
-  const [links] = useState([
-    {
-      title: "Home",
-      href: "#home",
-      img: <BsHouseFill />,
-    },
-    {
-      title: "About Us",
-      href: "#about",
-      img: <BsInfoCircleFill />,
-    },
-    {
-      title: "Steps",
-      href: "#steps",
-      img: <BsFillGearFill />,
-    },
-    {
-      title: "FAQ",
-      href: "/faq",
-      img: <BsQuestionCircleFill />,
-    },
-    {
-      title: "Contact Us",
-      href: "#contact",
-      img: <BsTelephoneFill />,
-    },
-  ]);
 
   // Values asigned to the top line of the hamburger menu used for rotation
   const topLineVariants = {

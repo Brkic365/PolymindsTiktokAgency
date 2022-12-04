@@ -1,5 +1,6 @@
 import { domAnimation, LazyMotion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <LazyMotion features={domAnimation}>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </LazyMotion>
     </>
   );

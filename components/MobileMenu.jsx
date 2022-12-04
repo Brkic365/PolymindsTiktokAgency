@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
@@ -66,13 +66,13 @@ function MobileMenu({ open, links, setOpen }) {
   }, [router.asPath]);
 
   return (
-    <m.main
+    <motion.main
       animate={open ? "open" : animationFinished ? "finished" : "closing"}
       transition={{ duration: 0.3, type: "tween" }}
       variants={containerVariants}
       className={styles.container}
     >
-      <m.section
+      <motion.section
         animate={open ? "open" : "closed"}
         transition={{ duration: 0.2, type: "tween" }}
         variants={menuVariants}
@@ -93,8 +93,8 @@ function MobileMenu({ open, links, setOpen }) {
             );
           })}
         </ul>
-      </m.section>
-    </m.main>
+      </motion.section>
+    </motion.main>
   );
 }
 

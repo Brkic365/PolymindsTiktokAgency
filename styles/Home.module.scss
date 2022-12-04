@@ -141,14 +141,256 @@
         height: 5rem;
         width: 2px;
       }
+
+      .stepConnector1,
+      .stepConnector2 {
+        display: none;
+      }
     }
 
     .contact {
       margin-top: 6rem;
       h2 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    .main {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
       }
 
       p {
+        font-size: 1rem;
+      }
+
+      .hero {
+        .content {
+          margin: 0 auto;
+          width: 80%;
+          p {
+          }
+
+          button {
+            padding: 0.8rem 1.6rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .container {
+    .main {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .hero {
+        padding-top: 3rem;
+        .content {
+          margin: 0 auto;
+          width: 80%;
+
+          p {
+            margin: 1.5rem 0;
+          }
+
+          button {
+            padding: 0.8rem 1.6rem;
+            font-size: 1rem;
+          }
+        }
+
+        .imgHolder {
+          width: 70%;
+          margin: 0 auto;
+          margin-top: 7rem;
+        }
+      }
+
+      .whoWeAre {
+        .content {
+          p {
+          }
+        }
+
+        .imgHolder {
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 4rem;
+        }
+      }
+
+      .steps {
+        margin-top: 8rem;
+        .stepOne,
+        .stepTwo,
+        .stepThree {
+          width: 60%;
+          .circle {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            svg {
+            }
+          }
+
+          .text {
+            p {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+
+      .contact {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    .main {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        padding: 2rem;
+        padding-top: 3rem;
+
+        .content {
+          width: 30rem;
+          align-items: flex-start;
+          text-align: left;
+
+          p {
+            text-align: left;
+            margin: 1.5rem 0;
+          }
+
+          button {
+            padding: 0.8rem 1.6rem;
+            font-size: 1rem;
+          }
+        }
+
+        .imgHolder {
+          width: 25rem;
+          margin: 0 auto;
+          margin-top: 0;
+        }
+      }
+
+      .whoWeAre {
+        flex-direction: row-reverse;
+        place-content: space-between;
+        word-wrap: 100%;
+        padding: 2rem;
+        .content {
+          width: 50%;
+          text-align: left;
+
+          h2 {
+            text-align: left;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            text-align: left;
+          }
+        }
+
+        .imgHolder {
+          margin: 0;
+          width: 40%;
+        }
+      }
+
+      .steps {
+        width: 100%;
+        margin-top: 8rem;
+        padding: 2rem;
+        .stepOne,
+        .stepTwo,
+        .stepThree {
+          padding: 3rem;
+          width: 100%;
+          flex-direction: row;
+
+          .circle {
+            margin: 0;
+            svg {
+            }
+          }
+
+          .text {
+            margin-left: 4rem;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: left;
+            width: 55%;
+            p {
+              text-align: left;
+              margin-top: 1rem;
+            }
+          }
+        }
+
+        .stepTwo {
+          flex-direction: row-reverse;
+
+          .text {
+            margin-right: 4rem;
+            align-items: flex-end;
+
+            p {
+              text-align: right;
+            }
+          }
+        }
+
+        .line {
+          display: none;
+        }
+
+        .stepConnector1,
+        .stepConnector2 {
+          display: block;
+          width: 75%;
+        }
+      }
+
+      .contact {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 8rem;
       }
     }
   }

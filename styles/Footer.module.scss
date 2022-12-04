@@ -1,0 +1,166 @@
+.footer {
+  background-color: #10182a;
+  padding: 2rem;
+  color: white;
+
+  .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      .logoHolder {
+        width: 2rem;
+      }
+
+      h1 {
+        margin-left: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 39px;
+      }
+    }
+
+    .links {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      list-style-type: none;
+
+      li {
+        margin-top: 0.5rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .bottom {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .copyright {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 15px;
+    }
+
+    .middleLinks {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      list-style-type: none;
+
+      a {
+        margin-top: 0.5rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+
+    .paymentMethods {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    padding: 3rem;
+    .top {
+      align-items: flex-start;
+      .logo {
+        .logoHolder {
+          width: 2.5rem;
+        }
+      }
+
+      .links {
+        flex-direction: row;
+        li {
+          margin-top: 0;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    padding: 4rem;
+    .top {
+      padding-bottom: 3rem;
+      align-items: flex-start;
+      .logo {
+        .logoHolder {
+          width: 3rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      .links {
+        margin-top: 2.5rem;
+        li {
+          font-size: 1.1rem;
+          margin-top: 0;
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .bottom {
+      padding-top: 2rem;
+      flex-direction: row;
+      width: 100%;
+      place-content: space-between;
+
+      .copyright {
+      }
+
+      .middleLinks {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: flex-start;
+
+        a {
+          padding: 0 1rem;
+          font-size: 0.9rem;
+          border-right: 1px solid rgba(135, 139, 149, 0.5);
+        }
+
+        a:nth-child(3) {
+          border-right: none;
+        }
+      }
+
+      .paymentMethods {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .footer {
+    padding: 4rem 6rem;
+  }
+}

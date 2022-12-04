@@ -86,6 +86,17 @@ export default function Home() {
           </section>
 
           <div className={styles.line} />
+          <section className={styles.stepConnector1}>
+            <Image
+              src={`/images/home/step_connector_1.svg`}
+              width={725}
+              height={101}
+              layout="responsive"
+              objectFit="contain"
+              alt="Step connector 1"
+              priority
+            />
+          </section>
 
           <section className={styles.stepTwo}>
             <div className={styles.circle}>
@@ -101,6 +112,17 @@ export default function Home() {
           </section>
 
           <div className={styles.line} />
+          <section className={styles.stepConnector2}>
+            <Image
+              src={`/images/home/step_connector_2.svg`}
+              width={778}
+              height={146}
+              layout="responsive"
+              objectFit="contain"
+              alt="Step connector 2"
+              priority
+            />
+          </section>
 
           <section className={styles.stepThree}>
             <div className={styles.circle}>
