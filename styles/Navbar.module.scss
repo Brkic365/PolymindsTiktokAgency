@@ -1,4 +1,5 @@
 .nav {
+  z-index: 2;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -6,24 +7,23 @@
   width: 100%;
   padding: 0.9rem 2rem;
   position: fixed;
-  background: rgb(75, 95, 141);
+  background: rgb(3, 8, 33);
 
+  background: linear-gradient(
+    0deg,
+    rgba(3, 8, 33, 1) 0%,
+    rgba(59, 76, 125, 1) 100%
+  );
   background: -moz-linear-gradient(
-    270deg,
-    rgba(75, 95, 141, 1) 0%,
-    rgba(0, 0, 0, 1) 167.44%
+    0deg,
+    rgba(3, 8, 33, 1) 0%,
+    rgba(59, 76, 125, 1) 100%
   );
   background: -webkit-linear-gradient(
-    270deg,
-    rgba(75, 95, 141, 1) 0%,
-    rgba(0, 0, 0, 1) 167.44%
+    0deg,
+    rgba(3, 8, 33, 1) 0%,
+    rgba(59, 76, 125, 1) 100%
   );
-  background: linear-gradient(
-    270deg,
-    rgba(75, 95, 141, 1) 0%,
-    rgba(0, 0, 0, 1) 167.44%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4b5f8d",endColorstr="#000000",GradientType=1);
   border-bottom: 1px solid;
   transition: 0.25s ease-in-out;
 
@@ -45,8 +45,25 @@
   .right {
     z-index: 1000;
 
-    .langAndAuth {
+    button {
+      cursor: pointer;
       display: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 20px;
+      text-align: center;
+      color: white;
+
+      padding: 0.8rem 1.5rem;
+      background: rgba(75, 95, 141, 1);
+      border: none;
+      border-radius: 9px;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: darken(rgba(75, 95, 141, 1), 5%);
+      }
     }
 
     .hamburger {
@@ -74,8 +91,7 @@
 
 @media only screen and (min-width: 1300px) {
   .nav {
-    padding: 1rem;
-    padding-inline: 5%;
+    padding: 1.5rem 12rem;
     transform: translateX(-50%);
     left: 50%;
     .left {
@@ -96,54 +112,33 @@
 
           a {
             font-size: 1rem;
-            color: #616468;
+            color: white;
+            opacity: 0.5;
+            transition: 0.2s ease-in-out;
           }
 
           &:hover {
             a {
-              color: #0073c0;
+              opacity: 1;
             }
           }
         }
 
         .active {
           a {
-            color: #0073c0;
+            opacity: 1;
           }
         }
       }
     }
 
     .right {
-      .hamburger {
-        display: none;
+      button {
+        display: block;
       }
 
-      .langAndAuth {
-        display: flex;
-        align-items: center;
-
-        p {
-          font-size: 1rem;
-          font-weight: 600;
-        }
-
-        .authBtns {
-          display: flex;
-          align-items: center;
-          p {
-            font-weight: 600;
-            color: #49a6f9;
-            font-size: 1rem;
-            cursor: pointer;
-          }
-
-          button {
-            margin-left: 1.5rem;
-            font-size: 0.9rem;
-            padding: 0.7rem 1.5rem;
-          }
-        }
+      .hamburger {
+        display: none;
       }
     }
   }

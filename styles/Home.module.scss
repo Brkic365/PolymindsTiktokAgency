@@ -1,4 +1,6 @@
 .container {
+  position: relative;
+  z-index: 2;
   .main {
     color: white;
     padding: 1rem;
@@ -38,6 +40,7 @@
         }
 
         button {
+          cursor: pointer;
           font-style: normal;
           font-weight: 500;
           font-size: 0.9rem;
@@ -49,6 +52,11 @@
           background: #e42958;
           border: none;
           border-radius: 9px;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            background-color: darken(#e42958, 10%);
+          }
         }
       }
 
@@ -275,6 +283,7 @@
 
       h2 {
         font-size: 2.5rem;
+        line-height: 3.2rem;
       }
 
       .hero {
@@ -388,9 +397,147 @@
       }
 
       .contact {
-        width: 70%;
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    .main {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        padding: 2rem;
+        padding-top: 3rem;
+
+        .content {
+          width: 35rem;
+          align-items: flex-start;
+          text-align: left;
+
+          p {
+            width: 30rem;
+            text-align: left;
+            margin: 2rem 0;
+          }
+
+          button {
+            padding: 0.9rem 1.7rem;
+            font-size: 1rem;
+          }
+        }
+
+        .imgHolder {
+          width: 30rem;
+        }
+      }
+
+      .whoWeAre {
+        padding: 5rem;
+      }
+
+      .steps {
+        width: 80%;
         margin: 0 auto;
         margin-top: 8rem;
+      }
+
+      .contact {
+        width: 34rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .container {
+    .main {
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+      }
+
+      .hero {
+        .content {
+          width: 40rem;
+          align-items: flex-start;
+          text-align: left;
+
+          p {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+          }
+
+          button {
+            padding: 0.9rem 1.7rem;
+            font-size: 1rem;
+          }
+        }
+
+        .imgHolder {
+          width: 35rem;
+        }
+      }
+
+      .whoWeAre {
+        padding: 8rem;
+
+        .content {
+          p {
+            width: 80%;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+          }
+        }
+      }
+
+      .steps {
+        width: 80rem;
+        margin: 0 auto;
+        margin-top: 8rem;
+
+        .stepOne,
+        .stepTwo,
+        .stepThree {
+          .circle {
+            width: 8rem;
+            height: 8rem;
+
+            svg {
+              width: 6rem;
+              height: 6rem;
+            }
+          }
+        }
+
+        .stepOne,
+        .stepTwo {
+          .circle {
+            svg {
+              width: 10rem;
+              height: 10rem;
+            }
+          }
+        }
+      }
+
+      .contact {
+        width: 34rem;
       }
     }
   }

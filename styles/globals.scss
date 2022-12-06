@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgb(3, 8, 33);
+
+  background: linear-gradient(
+    0deg,
+    rgba(3, 8, 33, 1) 0%,
+    rgba(59, 76, 125, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(3, 8, 33, 1) 0%,
+    rgba(59, 76, 125, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(3, 8, 33, 1) 0%,
+    rgba(59, 76, 125, 1) 100%
+  );
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hexagons {
+  position: fixed;
+  z-index: 1;
+
+  .hexagon1,
+  .hexagon2,
+  .hexagon3,
+  .hexagon4 {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+
+    width: 10.813rem;
+    height: 12.063rem;
+  }
+
+  .hexagon2 {
+    top: 48vh;
+    left: 33vw;
+
+    width: 9.313rem;
+    height: 10.375rem;
+
+    transform: rotate(21deg);
+  }
+
+  .hexagon3 {
+    top: 90vh;
+    left: 7vw;
+
+    width: 13.938rem;
+    height: 15.563rem;
+
+    transform: rotate(-44deg);
+  }
+
+  .hexagon4 {
+    top: 75vh;
+    left: 80vw;
+
+    width: 28.938rem;
+    height: 32.25rem;
+
+    transform: rotate(-8deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    /*background: black;*/
+  }
+}

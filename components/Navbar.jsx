@@ -21,17 +21,17 @@ const MobileMenu = dynamic(() => import("./MobileMenu"));
 const links = [
   {
     title: "Home",
-    href: "#home",
+    href: "/#home",
     img: <BsHouseFill />,
   },
   {
     title: "About Us",
-    href: "#about",
+    href: "/#about",
     img: <BsInfoCircleFill />,
   },
   {
     title: "Steps",
-    href: "#steps",
+    href: "/#steps",
     img: <BsFillGearFill />,
   },
   {
@@ -41,7 +41,7 @@ const links = [
   },
   {
     title: "Contact Us",
-    href: "#contact",
+    href: "/#contact",
     img: <BsTelephoneFill />,
   },
 ];
@@ -119,6 +119,10 @@ function Navbar() {
 
       {/* Right Section */}
       <section className={styles.right}>
+        <Link href="/#contact">
+          <button>Get in touch</button>
+        </Link>
+
         <div
           className={styles.hamburger}
           onClick={() => setOpenMenu(!openMenu)}
