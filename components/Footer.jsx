@@ -1,6 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import styles from "../styles/Footer.module.scss";
 
 const links = [
@@ -45,7 +45,9 @@ function Footer() {
           {links.map((link) => {
             return (
               <li key={link.href}>
-                <Link href={link.href}>{link.title}</Link>
+                <Link href={link.href} scroll={false}>
+                  {link.title}
+                </Link>
               </li>
             );
           })}

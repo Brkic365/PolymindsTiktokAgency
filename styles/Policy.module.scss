@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 8rem;
+  padding-inline: 12rem;
+
+  .policy {
+    color: white;
+
+    .top {
+      svg:hover {
+        cursor: pointer;
+        color: rgb(235, 235, 235);
+      }
+
+      h1 {
+        margin-top: 0.5rem;
+        font-size: 2.2em;
+      }
+      padding-bottom: 1rem;
+    }
+
+    .content {
+      h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.8em;
+      }
+
+      h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2em;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    padding-inline: 8rem !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding-inline: 4rem !important;
+  }
+}

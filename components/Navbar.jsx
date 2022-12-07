@@ -110,7 +110,9 @@ function Navbar() {
                 key={link.href}
                 className={activeLink ? styles.active : undefined}
               >
-                <Link href={link.href}>{link.title}</Link>
+                <Link href={link.href} scroll={false}>
+                  {link.title}
+                </Link>
               </li>
             );
           })}
@@ -119,7 +121,7 @@ function Navbar() {
 
       {/* Right Section */}
       <section className={styles.right}>
-        <Link href="/#contact">
+        <Link href="/#contact" scroll={false}>
           <button>Get in touch</button>
         </Link>
 
