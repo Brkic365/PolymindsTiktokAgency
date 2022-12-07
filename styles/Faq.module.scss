@@ -1,0 +1,195 @@
+.faq {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    margin-top: 5rem;
+
+    h1 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+
+    .searchbar {
+      margin-top: 2rem;
+      background: #3f507e;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+
+      display: flex;
+      align-items: center;
+
+      input {
+        background-color: transparent;
+        padding: 0.5rem;
+        border-radius: 0;
+        color: white;
+
+        font-size: 0.8rem;
+        font-weight: 400;
+        outline: none;
+        border: none;
+      }
+
+      button {
+        background: #e42958;
+        border-radius: 0px 10px 10px 0px;
+        border: none;
+        padding: 0.5rem 1rem;
+        color: white;
+
+        svg {
+          width: 1.1rem;
+          height: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .categories {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .category {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+
+      width: 48%;
+      height: 8.5rem;
+      padding: 1rem;
+      background: #3f507e;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      .imgHolder {
+        display: flex;
+        align-items: center;
+        width: 2.5rem;
+        height: 3rem;
+      }
+
+      h3 {
+        position: absolute;
+        top: 4rem;
+        margin-top: 1rem;
+        font-weight: 500;
+        font-size: 0.85rem;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .faq {
+    .title {
+      h1 {
+        font-size: 2rem;
+        line-height: normal;
+      }
+
+      .searchbar {
+        input {
+          width: 15rem;
+          padding: 1rem;
+          font-size: 1rem;
+        }
+
+        button {
+          padding: 0.75rem 1.5rem;
+          svg {
+            width: 1.4rem;
+            height: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .categories {
+      .category {
+        height: 10rem;
+        padding: 1.5rem;
+        .imgHolder {
+          width: 3rem;
+        }
+
+        h3 {
+          width: 70%;
+          top: 5.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .faq {
+    .title {
+      margin-top: 10rem;
+      h1 {
+        font-size: 3rem;
+      }
+
+      .searchbar {
+        input {
+          width: 30rem;
+          padding: 1.3rem;
+          font-size: 1.1rem;
+        }
+
+        button {
+          padding: 1rem 2rem;
+          svg {
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+        }
+      }
+    }
+
+    .categories {
+      margin-top: 12rem;
+      gap: 1rem;
+      .category {
+        width: 12rem;
+        padding: 1.75rem;
+
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .faq {
+    .title {
+      margin-top: 12rem;
+    }
+
+    .categories {
+      margin-top: 15rem;
+      margin-bottom: 10rem;
+    }
+  }
+}

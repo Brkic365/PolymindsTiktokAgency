@@ -33,6 +33,10 @@
         font-size: 1.2em;
         font-weight: bolder;
       }
+
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -46,5 +50,11 @@
 @media only screen and (max-width: 700px) {
   .container {
     padding-inline: 4rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    padding-inline: 2rem !important;
   }
 }
