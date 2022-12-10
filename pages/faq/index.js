@@ -1,9 +1,9 @@
-import React from "react";
+import React,  { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Faq.module.scss";
 
-import { AiOutlineSearch } from "react-icons/ai";
+import Searchbar from "../../components/Searchbar";
 
 const categories = [
   {
@@ -39,16 +39,16 @@ const categories = [
 ];
 
 function Faq() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className={styles.faq}>
       <section className={styles.title}>
         <h1>Hi! How can we help you?</h1>
-        <section className={styles.searchbar}>
-          <input placeholder={"Ask a question..."} />
-          <button>
-            <AiOutlineSearch />
-          </button>
-        </section>
+        <Searchbar />
       </section>
 
       <section className={styles.categories}>

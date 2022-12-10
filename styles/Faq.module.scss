@@ -21,41 +21,6 @@
       font-size: 1.2rem;
       line-height: 1.6rem;
     }
-
-    .searchbar {
-      margin-top: 2rem;
-      background: #3f507e;
-      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-
-      display: flex;
-      align-items: center;
-
-      input {
-        background-color: transparent;
-        padding: 0.5rem;
-        border-radius: 0;
-        color: white;
-
-        font-size: 0.8rem;
-        font-weight: 400;
-        outline: none;
-        border: none;
-      }
-
-      button {
-        background: #e42958;
-        border-radius: 0px 10px 10px 0px;
-        border: none;
-        padding: 0.5rem 1rem;
-        color: white;
-
-        svg {
-          width: 1.1rem;
-          height: 1.1rem;
-        }
-      }
-    }
   }
 
   .categories {
@@ -105,22 +70,6 @@
         font-size: 2rem;
         line-height: normal;
       }
-
-      .searchbar {
-        input {
-          width: 15rem;
-          padding: 1rem;
-          font-size: 1rem;
-        }
-
-        button {
-          padding: 0.75rem 1.5rem;
-          svg {
-            width: 1.4rem;
-            height: 1.4rem;
-          }
-        }
-      }
     }
 
     .categories {
@@ -147,22 +96,6 @@
       margin-top: 10rem;
       h1 {
         font-size: 3rem;
-      }
-
-      .searchbar {
-        input {
-          width: 30rem;
-          padding: 1.3rem;
-          font-size: 1.1rem;
-        }
-
-        button {
-          padding: 1rem 2rem;
-          svg {
-            width: 1.7rem;
-            height: 1.7rem;
-          }
-        }
       }
     }
 

@@ -1,0 +1,103 @@
+[
+    {
+      "category": "Payment",
+      "questions": [
+        {
+          "title": "Payment question 1",
+          "content": "Payment answer 1",
+          "id": 0
+        },
+        {
+          "title": "Payment question 2",
+          "content": "Payment answer 2",
+          "id": 1
+        },
+        {
+          "title": "Payment question 3",
+          "content": "Payment answer 3",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "category": "Returns & refunds",
+      "questions": [
+        {
+          "title": "Returns and refunds question 1",
+          "content": "Returns and refunds answer 1",
+          "id": 3
+        },
+        {
+          "title": "Returns and refunds question 2",
+          "content": "Returns and refunds answer 2",
+          "id": 4
+        },
+        {
+          "title": "Returns and refunds question 3",
+          "content": "Returns and refunds answer 3",
+          "id": 5
+        }
+      ]
+    },
+    {
+      "category": "Guarantees & assurances",
+      "questions": [
+        {
+          "title": "Guarantees and assurances question 1",
+          "content": "Guarantees and assurances answer 1",
+          "id": 6
+        },
+        {
+          "title": "Guarantees and assurances question 2",
+          "content": "Guarantees and assurances answer 2",
+          "id": 7
+        },
+        {
+          "title": "Guarantees and assurances question 3",
+          "content": "Guarantees and assurances answer 3",
+          "id": 8
+        }
+      ]
+    },
+    {
+      "category": "Account management",
+      "questions": [
+        {
+          "title": "Account management question 1",
+          "content": "Account management answer 1",
+          "id": 9
+        },
+        {
+          "title": "Account management question 2",
+          "content": "Account management answer 2",
+          "id": 10
+        },
+        {
+          "title": "Account management question 3",
+          "content": "Account management answer 3",
+          "id": 11
+        }
+      ]
+    },
+    {
+      "category": "Frequency",
+      "questions": [
+        {
+          "title": "Frequency question 1",
+          "content": "Frequency answer 1",
+          "id": 12
+        },
+        {
+          "title": "Frequency question 2",
+          "content": "Frequency answer 2",
+          "id": 13
+        },
+        {
+          "title": "Frequency question 3",
+          "content": "Frequency answer 3",
+          "id": 14
+        }
+      ]
+    }
+  ]
+  

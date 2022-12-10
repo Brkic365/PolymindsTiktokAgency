@@ -100,10 +100,11 @@ function Navbar() {
             // If we check if pathname includes link.href with link.href being "/", it would
             // be true because "/" is the root, so that is why we in that case check if it
             // exactly the same, and not included in the current pathname
+
             let activeLink =
               link.href === "/"
-                ? router.pathname === link.href
-                : router.pathname.includes(link.href);
+                ? router.asPath === link.href
+                : router.asPath.includes(link.href);
 
             return (
               <li

@@ -1,0 +1,119 @@
+
+      .searchbar {
+        position: relative;
+        margin-top: 2rem;
+        background: #3f507e;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: fit-content;
+  
+        display: flex;
+        align-items: center;
+  
+        input {
+          background-color: transparent;
+          padding: 0.5rem;
+          border-radius: 0;
+          color: white;
+  
+          font-size: 0.8rem;
+          font-weight: 400;
+          outline: none;
+          border: none;
+        }
+  
+        button {
+          cursor: pointer;
+          background: #e42958;
+          border-radius: 0px 10px 10px 0px;
+          border: none;
+          padding: 0.5rem 1rem;
+          color: white;
+  
+          svg {
+            width: 1.1rem;
+            height: 1.1rem;
+          }
+        }
+
+        .autoComplete {
+          z-index: 3;
+          position: absolute;
+          top: 2.8rem;
+          left: 0;
+          width: 77%;
+
+          background: #3f507e;
+          box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+
+          p {
+            text-align: left;
+            font-size: 0.8rem;
+            width: 100%;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: 0.25s ease-in-out;
+            border-radius: 5px;
+
+            &:hover {
+              background: darken(#3f507e, 10%);
+            }
+          }
+        }
+      }
+  
+  @media only screen and (min-width: 550px) {
+        .searchbar {
+          input {
+            width: 15rem;
+            padding: 1rem;
+            font-size: 1rem;
+          }
+  
+          button {
+            padding: 0.75rem 1.5rem;
+            svg {
+              width: 1.4rem;
+              height: 1.4rem;
+            }
+          }
+
+          .autoComplete {
+            top: 3.5rem;
+
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+        .searchbar {
+          input {
+            width: 30rem;
+            padding: 1.3rem;
+            font-size: 1.1rem;
+          }
+  
+          button {
+            padding: 1.1rem 2rem;
+            svg {
+              width: 1.7rem;
+              height: 1.7rem;
+            }
+          }
+
+          .autoComplete {
+            top: 4.5rem;
+            width: 85%;
+
+            p {
+              font-size: 1rem;
+              padding: 0.75rem 1.25rem;
+            }
+          }
+        }
+  }
+  
