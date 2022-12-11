@@ -101,7 +101,7 @@ function Search() {
           <ul>
             {
               relatedQuestions.map((relatedQuestion, i) => {
-                return             <li>
+                return <li key={i}>
                 <Link href={`/faq/search?q=${relatedQuestion.id}`}>{relatedQuestion.title}</Link>
               </li>
               })
