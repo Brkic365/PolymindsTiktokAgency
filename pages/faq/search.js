@@ -23,6 +23,13 @@ function Search() {
   const [categoryIndex, setCategoryIndex] = useState(null);
   const [relatedQuestions, setRelatedQuestions] = useState(null);
 
+  /*
+    NULL - Not liked nor disliked
+    0 - Disliked
+    1 - Liked
+  */
+  const [likeStatus, setLikeStatus] = useState(null);
+
   const findQuestion = () => {
     if(!search) {
       return;
@@ -94,8 +101,8 @@ function Search() {
         <section className={styles.bottom}>
           <section className={styles.vote}>
             <p>Was this article helpful to you?</p>
-            <HiThumbUp />
-            <HiThumbDown />
+            <HiThumbUp style={{opacity: likeStatus === 0 ? 0.5 : 1}} onClick={() => setLikeStatus(likeStatus === 1 ? null : 1)}/>
+            <HiThumbDown style={{opacity: likeStatus === 1 ? 0.5 : 1}}  onClick={() => setLikeStatus(likeStatus === 0 ? null : 0)}/>
           </section>
           <span>Associated articles</span>
           <ul>
