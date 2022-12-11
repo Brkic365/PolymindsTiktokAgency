@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link"
 import styles from "../styles/Searchbar.module.scss";
 
+import { useRouter } from "next/router"
+
 import questions from "../public/data/questions.json"
 
 import { AiOutlineSearch } from "react-icons/ai";
@@ -12,15 +14,22 @@ import 'simplebar-react/dist/simplebar.min.css';
 import { useDetectClickOutside } from 'react-detect-click-outside';
 
 function Searchbar() {
+  const router = useRouter();
 
   const ref = useDetectClickOutside({ onTriggered: () => setShowAutoComplete(false) });
 
   const [autoComplete, setAutoComplete] = useState([]);
   const [showAutoComplete, setShowAutoComplete] = useState(false);
 
+  const [searchVal, setSearchVal] = useState(null);
+
   const [allQuestions, setAllQuestions] = useState(null);
 
   const handleSearch = (search) => {
+
+    console.log(search);
+
+    setSearchVal(search);
 
     if(!search || !allQuestions || search.length < 5) {
       setAutoComplete([]);
@@ -42,7 +51,25 @@ function Searchbar() {
     setAutoComplete(allMatches);
   }
 
-  console.log(autoComplete)
+  const handleForceSearch = () => {
+    if(autoComplete.length > 0) {
+      let index = allQuestions.indexOf(autoComplete[0]);
+
+      router.push(`/faq/search?q=${index}`);
+      setShowAutoComplete(false);
+    } else {
+      router.push(`/faq/search?q=${searchVal}`);
+    }
+  }
+
+  // Handle key press
+  const handleKeyDown = (e) => {
+
+    // If user pressed enter on search, search the value of input
+    if (e.key === 'Enter') {
+      handleForceSearch();
+    }
+  }
 
   useEffect(() => {
     let allQ = [];
@@ -57,8 +84,8 @@ function Searchbar() {
 
   return (
     <section className={styles.searchbar} ref={ref}>
-      <input placeholder={"Ask a question..."} onChange={(e) => handleSearch(e.target.value)} onFocus={() => setShowAutoComplete(true)} />
-      <button>
+      <input placeholder={"Ask a question..."} onKeyDown={handleKeyDown} onChange={(e) => handleSearch(e.target.value)} onFocus={() => setShowAutoComplete(true)} />
+      <button onClick={handleForceSearch}>
         <AiOutlineSearch />
       </button>
 
@@ -72,7 +99,7 @@ function Searchbar() {
 
               let index = allQuestions.indexOf(question);
 
-              return <Link key={i} href={`/faq/search?q=${index}`}><p>{question}</p></Link>
+              return <Link key={i} href={`/faq/search?q=${index}`} onClick={() => setShowAutoComplete(false)}><p>{question}</p></Link>
             })
           }
           </SimpleBar>
