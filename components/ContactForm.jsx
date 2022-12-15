@@ -53,7 +53,7 @@ export default function ContactForm() {
     setStatus({
       submitted: false,
       submitting: false,
-      info: { error: false, msg: null },
+      info: { error: false, msg: null }, 
     });
   };
 
@@ -72,7 +72,12 @@ export default function ContactForm() {
           "Thank you, your message has been submitted."
         );
 
-        setSuccess(true)
+        setSuccess(true):
+        setStatus({
+          submitted: false,
+          submitting: false,
+          info: { error: false, msg: null },
+        });
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error);
