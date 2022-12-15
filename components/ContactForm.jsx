@@ -72,7 +72,7 @@ export default function ContactForm() {
           "Thank you, your message has been submitted."
         );
 
-        setSuccess(true):
+        setSuccess(true);
         setStatus({
           submitted: false,
           submitting: false,
