@@ -24,6 +24,12 @@
 
   p {
     margin-bottom: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 26px;
+    text-align: center;
+    color: white;
   }
 
   button {
@@ -39,10 +45,17 @@
     border: none;
     border-radius: 9px;
 
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+
     p {
       margin-bottom: 0;
       font-size: 0.9rem;
       color: white;
+    }
+
+    &:hover {
+      background-color: darken(#e42958, 10%);
     }
   }
 

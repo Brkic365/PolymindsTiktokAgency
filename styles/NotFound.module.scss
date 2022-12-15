@@ -1,0 +1,148 @@
+.container {
+    position: relative;
+    z-index: 2;
+
+    .notFound {
+        padding: 8rem 2rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        color: white;
+        text-align: center;
+
+        .imgHolder {
+            width: 120%;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 39px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 26px;
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+
+        button {
+            margin-top: 1rem;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 20px;
+            text-align: center;
+            color: white;
+  
+            padding: 0.4rem 1.2rem;
+            background: #e42958;
+            border: none;
+            border-radius: 9px;
+            transition: 0.2s ease-in-out;
+  
+            &:hover {
+              background-color: darken(#e42958, 10%);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+    
+        .notFound {
+    
+            .imgHolder {
+                width: 100%;
+            }
+    
+            h1 {
+                font-size: 2.5rem;
+                line-height: normal;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+    
+            button {
+                font-size: 0.9rem;
+                padding: 0.75rem 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+    
+        .notFound {
+    
+            .imgHolder {
+                width: 80%;
+            }
+    
+            h1 {
+                font-size: 3.25rem;
+            }
+    
+            p {
+                margin: 1rem 0;
+                font-size: 1.2rem;
+            }
+    
+            button {
+                margin-top: 2rem;
+                font-size: 1rem;
+                padding: 1rem 2.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .container {
+    
+        .notFound {
+    
+            .imgHolder {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .container {
+    
+        .notFound {
+    
+            .imgHolder {
+                width: 50%;
+            }
+    
+            h1 {
+                font-size: 3.5rem;
+            }
+    
+            p {
+                margin: 1.5rem 0;
+                font-size: 1.5rem;
+            }
+    
+            button {
+                margin-top: 2rem;
+                font-size: 1.25rem;
+                padding: 1.25rem 3.5rem;
+            }
+        }
+    }
+}

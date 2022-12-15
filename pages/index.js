@@ -141,10 +141,6 @@ export default function Home() {
         {/* Contact section */}
         <section className={styles.contact} id={"contact"}>
           <h2>Have any questions?</h2>
-          <p>
-            Feel free to reach out to us in regards to any questions you have
-            about our agency.
-          </p>
           <ContactForm />
         </section>
       </main>

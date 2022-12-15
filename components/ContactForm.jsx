@@ -8,6 +8,8 @@ import { Fade } from "react-awesome-reveal";
 export default function ContactForm() {
   const router = useRouter();
 
+  const [success, setSuccess] = useState(false);
+
   // Initial status state
   const [status, setStatus] = useState({
     submitted: false,
@@ -61,7 +63,7 @@ export default function ContactForm() {
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
     axios({
       method: "POST",
-      url: "https://formspree.io/f/xlezvpbv",
+      url: "https://formspree.io/f/moqzaqvl",
       data: inputs,
     })
       .then((response) => {
@@ -70,7 +72,7 @@ export default function ContactForm() {
           "Thank you, your message has been submitted."
         );
 
-        router.push("/contact/success", undefined, { shallow: true });
+        setSuccess(true)
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error);
@@ -79,7 +81,12 @@ export default function ContactForm() {
 
   const ContactForm = (
     <Fade cascade triggerOnce delay={100}>
+      <p>
+        Feel free to reach out to us in regards to any questions you have
+        about our agency.
+      </p>
       <form onSubmit={handleOnSubmit}>
+
         {/* Hidden input used to change the subject of the email */}
         <input
           type="hidden"
@@ -132,7 +139,18 @@ export default function ContactForm() {
         </button>
       </form>
     </Fade>
+
+
   );
 
-  return <div className={styles.contactForm}>{ContactForm}</div>;
+  const SuccessPage = (
+    <Fade cascade triggerOnce delay={100}>
+      <p>Thank you for taking the time to submit your contact form. We appreciate your interest in our company and are committed to providing you with the best possible service. If you have any questions or concerns, please do not hesitate to contact us again below.</p>
+      <button onClick={() => {setSuccess(false)}}>
+        Submit again
+      </button>
+    </Fade>
+  );
+
+  return <div className={styles.contactForm}>{success ? SuccessPage : ContactForm}</div>;
 }
