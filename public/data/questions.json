@@ -1,103 +1,102 @@
 [
-    {
-      "category": "Payment",
-      "questions": [
-        {
-          "title": "Payment question 1",
-          "content": "Payment answer 1",
-          "id": 0
-        },
-        {
-          "title": "Payment question 2",
-          "content": "Payment answer 2",
-          "id": 1
-        },
-        {
-          "title": "Payment question 3",
-          "content": "Payment answer 3",
-          "id": 2
-        }
-      ]
-    },
-    {
-      "category": "Returns & refunds",
-      "questions": [
-        {
-          "title": "Returns and refunds question 1",
-          "content": "Returns and refunds answer 1",
-          "id": 3
-        },
-        {
-          "title": "Returns and refunds question 2",
-          "content": "Returns and refunds answer 2",
-          "id": 4
-        },
-        {
-          "title": "Returns and refunds question 3",
-          "content": "Returns and refunds answer 3",
-          "id": 5
-        }
-      ]
-    },
-    {
-      "category": "Guarantees & assurances",
-      "questions": [
-        {
-          "title": "Guarantees and assurances question 1",
-          "content": "Guarantees and assurances answer 1",
-          "id": 6
-        },
-        {
-          "title": "Guarantees and assurances question 2",
-          "content": "Guarantees and assurances answer 2",
-          "id": 7
-        },
-        {
-          "title": "Guarantees and assurances question 3",
-          "content": "Guarantees and assurances answer 3",
-          "id": 8
-        }
-      ]
-    },
-    {
-      "category": "Account management",
-      "questions": [
-        {
-          "title": "Account management question 1",
-          "content": "Account management answer 1",
-          "id": 9
-        },
-        {
-          "title": "Account management question 2",
-          "content": "Account management answer 2",
-          "id": 10
-        },
-        {
-          "title": "Account management question 3",
-          "content": "Account management answer 3",
-          "id": 11
-        }
-      ]
-    },
-    {
-      "category": "Frequency",
-      "questions": [
-        {
-          "title": "Frequency question 1",
-          "content": "Frequency answer 1",
-          "id": 12
-        },
-        {
-          "title": "Frequency question 2",
-          "content": "Frequency answer 2",
-          "id": 13
-        },
-        {
-          "title": "Frequency question 3",
-          "content": "Frequency answer 3",
-          "id": 14
-        }
-      ]
-    }
-  ]
-  
+  {
+    "category": "Payment",
+    "questions": [
+      {
+        "title": "Which payment options do you support?",
+        "content": "We support PayPal, Wire transfers, Cryptocurrency. If your desired payment option is not listed contact us and we will discuss it further.",
+        "id": 0
+      },
+      {
+        "title": "How much do your services cost?",
+        "content": "We base the cost of our services on the amount of content that we would be posting on your social media and the content length.",
+        "id": 1
+      },
+      {
+        "title": "Can I use more than one payment method per transaction?",
+        "content": "No. We only support one payment method per transaction.",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "category": "Returns & refunds",
+    "questions": [
+      {
+        "title": "Do you support refunds?",
+        "content": "Currently we do not support refunds however if you are for any reason unsatisfied with our work we offer revisions and additional content for free.",
+        "id": 3
+      },
+      {
+        "title": "What do you mean by returns?",
+        "content": "A return is when a customer is unsatisfied with our product and they decide to remove it from their socials.",
+        "id": 4
+      },
+      {
+        "title": "I've accidentally sent a wrong video, can I change it?",
+        "content": "Yes. Contact us about the video and we will make sure we take care of it.",
+        "id": 5
+      }
+    ]
+  },
+  {
+    "category": "Guarantees & assurances",
+    "questions": [
+      {
+        "title": "What is a guarantee?",
+        "content": "Guarantee is a lawful term and it is normally a promise or a commitment that validates the durability or quality of an item or service. It might be seen as a vow where an item or service will perform in a predefined way.",
+        "id": 6
+      },
+      {
+        "title": "What is an assurance?",
+        "content": "Assurance is the act of assuring something. It is done to inspire full confidence of the customer.",
+        "id": 7
+      },
+      {
+        "title": "Does Polyminds guarantee quality work and services?",
+        "content": "Yes. We will always make sure the content you get is of the highest quality.",
+        "id": 8
+      }
+    ]
+  },
+  {
+    "category": "Account management",
+    "questions": [
+      {
+        "title": "How do I open an account?",
+        "content": "Click on the register account button and enter your details.",
+        "id": 9
+      },
+      {
+        "title": "How do I close my account?",
+        "content": "Go to your account settings. Scroll down and you will find a delete account button.",
+        "id": 10
+      },
+      {
+        "title": "Will I see my previous orders on my account",
+        "content": "Yes. All of your previous services done by us will be displayed on your account page.",
+        "id": 11
+      }
+    ]
+  },
+  {
+    "category": "Frequency",
+    "questions": [
+      {
+        "title": "How frequently will you be posting?",
+        "content": "We discuss the frequency of the posts with each of our clients and we post accordingly to their needs.",
+        "id": 12
+      },
+      {
+        "title": "What is the most videos you can post in a day?",
+        "content": "As much as you would need. Most clients don't look for over 3 videos / day.",
+        "id": 13
+      },
+      {
+        "title": "How frequently can I work with you?",
+        "content": "We are constantly open to work. Any time you would need our services, contact us and we will discuss everything in detail.",
+        "id": 14
+      }
+    ]
+  }
+]
