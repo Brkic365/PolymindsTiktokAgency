@@ -59,7 +59,7 @@ export default function Home() {
 
           <section className={styles.imgHolder}>
             <Image
-              src={`/images/home/social_media.png`}
+              src={`/images/home/social_media.webp`}
               width={292}
               height={265}
               layout="responsive"

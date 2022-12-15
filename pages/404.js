@@ -18,7 +18,7 @@ function NotFound() {
     <main className={styles.notFound}>
         <section className={styles.imgHolder}>
             <Image
-              src={`/images/404.png`}
+              src={`/images/404.webp`}
               width={976}
               height={646}
               layout="responsive"
