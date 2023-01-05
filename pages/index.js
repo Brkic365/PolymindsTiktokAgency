@@ -31,7 +31,7 @@ export default function Home() {
           </section>
           <section className={styles.imgHolder}>
             <Image
-              src={`/images/home/phone.png`}
+              src={`/images/home/phone.webp`}
               width={366}
               height={391}
               layout="responsive"
