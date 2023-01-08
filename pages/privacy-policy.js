@@ -547,11 +547,11 @@ function PrivacyPolicy() {
               <p>
                 By visiting this page on our website:{" "}
                 <a
-                  href="https://polyminds-agency.vercel.app/#contact"
+                  href="https://polyminds.tech/#contact"
                   rel="external nofollow noopener noreferrer"
                   target="_blank"
                 >
-                  https://polyminds-agency.vercel.app/#contact
+                  https://polyminds.tech/#contact
                 </a>
               </p>
             </li>

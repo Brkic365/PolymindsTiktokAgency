@@ -60,7 +60,7 @@ function Footer() {
         </p>
 
         <section className={styles.middleLinks}>
-          <Link href={"#contact"}>Contact Us</Link>
+          <Link href={"/#contact"}>Contact Us</Link>
           <Link href={"/privacy-policy"}>Privacy Policy</Link>
           <Link href={"/terms-of-service"}>Terms of Services</Link>
         </section>
